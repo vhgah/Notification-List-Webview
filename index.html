@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification List Webview</title>
+    <link rel="stylesheet" href="./css/v1/index.css" />
+  </head>
+  <body>
+    <div id="hgah_inbox"></div>
+    <script src="./js/v1/index.js"></script>
+    <script>
+      // change to your config
+      const inboxData = {
+        listInboxUrl: "http://laravel.docker/api/v1/inboxes", // your list inbox url
+        headerToken:
+          "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGFyYXZlbC5kb2NrZXIvYXBpL3YxL2xvZ2luIiwiaWF0IjoxNjk2ODg5ODkxLCJleHAiOjE2OTY4OTM0OTEsIm5iZiI6MTY5Njg4OTg5MSwianRpIjoiMWNqVWZybWc3cFZ3RTVOcCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3YyaIAJ2NINZeYfhseZuF3iaY7B3hNIu-DYIBMIm3ns",
+      };
+
+      initInbox(inboxData);
+
+      function initInbox(inboxData) {
+        try {
+          window.INBOX_WEBVIEW.init(inboxData);
+        } catch (e) {
+          console.error("initInbox Webview error", e);
+        }
+      }
+    </script>
+  </body>
+</html>
