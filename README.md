@@ -57,3 +57,7 @@ var webView = WebView(
 - Click to view detail notification
 
 - update notification is read
+
+## Support
+
+- If you have any issues or want to ask me: just create a new issue
