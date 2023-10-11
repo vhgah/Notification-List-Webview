@@ -12,10 +12,24 @@
 
 - Infinite loading
 
-Using view 3, typesciprt
+Using view 3, typesciprt and tailwind.
 
 ## How to use
-- 
+- create a index file html or php to load js and css file
+```bash
+https://vhgah.github.io/Notification-List-Webview/js/v1/index.js
+```
+```bash
+https://vhgah.github.io/Notification-List-Webview/css/v1/index.css
+```
+index file example:
+```bash
+https://github.com/vhgah/Notification-List-Webview/blob/main/index.html
+```
+- make sure you has initInbox function to vue has access to your api get inboxes (listInboxUrl), authenToken (not required).
+- and everything will work find.
+
+## Example
 - code example when integrate webview to flutter
 ```bash
 var webView = WebView(
