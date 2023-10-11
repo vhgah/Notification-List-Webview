@@ -50,6 +50,19 @@ var webView = WebView(
     );
 ```
 
+## Api example
+```bash
+[
+      {
+            "title": "Alias vero magni doloremque minima est aperiam a.",
+            "content": "Voluptates blanditiis ut ut sint eum soluta. Possimus dolor vel non alias vero optio inventore. Non ut voluptatem voluptatum et dignissimos. Harum .",
+            "sent_at": "07-10-2023 16:25:20",
+            "read_at": "08-10-2023 17:50:58",
+            "image": "https://cdn-icons-png.flaticon.com/512/893/893257.png"
+      },
+]
+```
+
 ## Features will be updated in version 2
 
 - PosmessageHandler to close webview
